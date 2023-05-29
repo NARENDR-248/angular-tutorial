@@ -1,0 +1,18 @@
+<h4>Hello Home !</h4>
+
+
+<button (click)="getData()" >Get </button>
+
+
+<button (click)="postData()" >Post </button>
+
+
+<button (click)="updateData()" >Update </button>
+
+
+<button (click)="delete()" >Delete </button>
+
+
+<br>
+
+<app-posts [posts]="postsArray" (sendPostData)="getChildData($event)" ></app-posts>
